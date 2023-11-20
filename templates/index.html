@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing Page</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='assets/favicon.ico')}}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <div class="image">
+                    <!-- <img src="assets/Ami.png" class="img-circle elevation-2" alt="Creator"> -->
+                </div>
+                <a class="navbar-brand" href="index.html">HDI Backpropagation Forcasting</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Human Develompments Index Backpropagation Forcasting</h1>
+                            <p class="lead text-white-50 mb-4">by 5200411196 Nasmah Nur Amiroh</p>
+                            <!-- <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data Input</h5>
+                          <p class="card-text">Inputing the data that required before forcasting process.</p>
+                          <a href="input" class="btn btn-primary">Input Data</a>
+                        </div>
+                    </div>
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data</h5>
+                          <p class="card-text">Showing the data that used to forcast HDI at Wonosobo.</p>
+                          <a href="lihat" class="btn btn-primary">Data</a>
+                        </div>
+                    </div>
+                    <p>
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data Graphic</h5>
+                          <p class="card-text">Contaning the graphic of HDI data since 1996-2022.</p>
+                          <a href="grafik" class="btn btn-primary">Graphic</a>
+                        </div>
+                    </div>
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Scalling Data</h5>
+                          <p class="card-text">Showing the results of HDI's data after scalling proces using sigmoid biner function and minmax scalling to normalize data.</p>
+                          <a href="scalling" class="btn btn-primary">Scalling</a>
+                        </div>
+                    </div>
+                    </p>
+                    <p>
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data Training and Validation</h5>
+                          <p class="card-text">Training process to predict the HDI and showing the graphic.</p>
+                          <a href="latih" class="btn btn-primary">Training</a>
+                        </div>
+                    </div>
+                    <div class="card border-dark mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data Testing and Prediction</h5>
+                          <p class="card-text">Testing process to predict the HDI and showing the graphic.</p>
+                          <a href="uji" class="btn btn-primary">Test & Prediction</a>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Nasmah Nur Amiroh 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static',filename='js/scripts.js')}}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
